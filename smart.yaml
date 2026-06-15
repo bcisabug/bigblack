@@ -111,12 +111,12 @@ proxy-groups:
 
 # ███████████████████████████ 规则匹配 ███████████████████████████
 rules:
-  - DOMAIN,dns.alidns.com,直连
-  - DOMAIN,doh.pub,直连
+  - DOMAIN,dns.alidns.com,国内直连
+  - DOMAIN,doh.pub,国内直连
   - DOMAIN,doh.pubdefault,REJECT
   # 1. 局域网与本地直连（最高优先级）
   - RULE-SET,private_ip,直连,no-resolve
-  - RULE-SET,private_domain,直连
+  - RULE-SET,private_domain,国内直连
   # 广告拦截
   - RULE-SET,fakeipfilter_domain,REJECT-DROP
   
@@ -128,10 +128,10 @@ rules:
   - DOMAIN-KEYWORD,idsduf,默认代理
   
   # 全网 BT/PT 流量直连
-  - DOMAIN-KEYWORD,tracker,直连
-  - DOMAIN-KEYWORD,torrent,直连
-  - DOMAIN-KEYWORD,peer,直连
-  - DST-PORT,6881,直连
+  - DOMAIN-KEYWORD,tracker,国内直连
+  - DOMAIN-KEYWORD,torrent,国内直连
+  - DOMAIN-KEYWORD,peer,国内直连
+  - DST-PORT,6881,国内直连
   
   # 3. 垂直细分领域代理（MRS 高效匹配）
   - RULE-SET,ai_domain,AI
