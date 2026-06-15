@@ -5,7 +5,7 @@
 # 机场订阅
 proxy-providers:
   1.光喵:
-    url: "http://abc.speedtest.688110.xyz:23000/BAOHAO123/download/4"
+    url: "https://113.29.230.78/proxy?url=https://subscription.5188111.xyz/guangmiao?token=fce4c18fc1ee05a0efc2d67d0714923chttps://113.29.230.78/proxy?url=https://subscription.5188111.xyz/guangmiao?token=fce4c18fc1ee05a0efc2d67d0714923c"
     type: http
     interval: 86400
     health-check:
