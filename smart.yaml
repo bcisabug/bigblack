@@ -107,21 +107,7 @@ dns:
     - "https://dns.alidns.com/dns-query"
     - "https://doh.pub/dns-query"
     
-sniffer:
-  enable: true
-  parse-pure-ports: true
-  sniff:
-    TLS:
-      ports: [443, 8443]
-    HTTP:
-      ports: [80, 8080-8888]
-      override-destination: true
-  # 👇 在这里加上 skip 规则，强制不嗅探以下流量
-  skip-domain:
-    - '+.apple.com'           # 顺便跳过苹果服务，防止苹果商店抽风
-    - '+.netflix.com'         # 跳过奈飞，防止因嗅探导致流媒体降画质
-  skip-src-address:
-    - '192.168.5.1'
+
  
 # 出站策略组 (保留您的 Smart 核心逻辑)
 proxy-groups:
