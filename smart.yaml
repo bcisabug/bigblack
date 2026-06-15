@@ -1,5 +1,5 @@
-# 名称： OpenClash_to_Clashmi_Icons_Overwrite
-# 说明： 继承 OpenClash 的高效 MRS 规则集与智能策略组，并补齐 Clashmi 策略组图标。
+# 名称： OpenClash_to_Clashmi_Clean_Overwrite
+# 说明： 继承 OpenClash 的高效 MRS 规则集与智能策略组，采用 Clashmi 原生隐式直连机制。
 
 # ███████████████████████████ 锚点区域 ███████████████████████████
 rule-anchor:
@@ -80,7 +80,6 @@ proxy-groups:
   - {name: Microsoft, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Microsoft.png, proxies: [直连, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
   - {name: 🎯 直连, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/China.png, proxies: [直连, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
   - {name: 漏网之鱼, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/MATCH.png, proxies: [直连, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
-  - {name: 直连, type: direct, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/China.png}
 
   # ══ 节点过滤区域 ══
   - {name: 香港节点, type: select, include-all: true, filter: "(?i)港|🇭🇰|hk|hongkong|hong kong", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/HK.png}
@@ -104,7 +103,7 @@ proxy-groups:
   - {name: ♻️ 日本智能, type: url-test, url: "http://www.gstatic.com/generate_204", interval: 600, include-all: true, filter: "(?=.*(日|🇯🇵|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/JP.png}
   - {name: ♻️ 狮城智能, type: url-test, url: "http://www.gstatic.com/generate_204", interval: 600, include-all: true, filter: "(?=.*(新加坡|🇸🇬|(?i)坡|狮城|SG|Singapore))^((?!(港|台|韩|日|美)).)*$", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/SG.png}
   - {name: ♻️ 美国智能, type: url-test, url: "http://www.gstatic.com/generate_204", interval: 600, include-all: true, filter: "(?=.*(美|🇺🇸|🇺🇲|US|(?i)States|America))^((?!(港|台|日|韩|新)).)*$", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/US.png}
-  - {name: ♻️ 他国智能, type: url-test, url: "http://www.gstatic.com/generate_204", interval: 600, include-all: true, filter: "^((?!(套餐|到期|有效|剩余|版本|已用|过期|失联|测试|官方|网址|备用|群|TEST|客服|网站|获取|订阅|流量|机场|下次|官址|联系|邮箱|工单|学术|USE|USED|TOTAL|EXPIRE|EMAIL|官网|距离|更新|订阅|网站|流量|时间|到期|直连官网|距离|更新|订阅|网站|流量|时间|到期|直连|美|🇺🇸|🇺🇲|港|🇭🇰|台|🇹🇼|🇨🇳|日|🇯🇵|新|🇸🇬)).)*$", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/OT.png}
+  - {name: ♻️ 他国智能, type: url-test, url: "http://www.gstatic.com/generate_204", interval: 600, include-all: true, filter: "^((?!(套餐|到期|有效|剩余|版本|已用|过期|失联|测试|官方|网址|备用|群|TEST|客服|网站|获取|订阅|流量|机场|机场|下次|官址|联系|邮箱|工单|学术|USE|USED|TOTAL|EXPIRE|EMAIL|官网|距离|更新|订阅|网站|流量|时间|到期|直连官网|距离|更新|订阅|网站|流量|时间|到期|直连|美|🇺🇸|🇺🇲|港|🇭🇰|台|🇹🇼|🇨🇳|日|🇯🇵|新|🇸🇬)).)*$", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/OT.png}
   - {name: 自动选择, type: url-test, url: "http://www.gstatic.com/generate_204", interval: 300, include-all: true, filter: "^((?!(套餐|到期|有效|剩余|版本|已用|过期|失联|测试|官方|网址|备用|群|TEST|客服|网站|获取|订阅|流量|机场|下次|官址|联系|邮箱|工单|学术|USE|USED|TOTAL|EXPIRE|EMAIL|官网|距离|更新|订阅|网站|流量|时间|到期|直连官网|距离|更新|订阅|网站|流量|时间|到期|直连)).)*$", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Rocket.png}
   - {name: 全部节点, type: select, include-all: true, filter: "^((?!(套餐|到期|有效|剩余|版本|已用|过期|失联|测试|官方|网址|备用|群|TEST|客服|网站|获取|订阅|流量|机场|下次|官址|联系|邮箱|工单|学术|USE|USED|TOTAL|EXPIRE|EMAIL|官网|距离|更新|订阅|网站|流量|时间|到期|直连)).)*$", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Category.png}
 
