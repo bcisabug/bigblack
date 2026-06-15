@@ -1,5 +1,5 @@
-# 名称： OpenClash_to_Clashmi_Clean_Overwrite
-# 说明： 继承 OpenClash 的高效 MRS 规则集与智能策略组，采用 Clashmi 原生隐式直连机制。
+# 名称： Seven1_fallback_Geo_Clashmi_Overwrite_v2
+# 说明： 完美融合 OpenClash MRS 规则集与 Clashmi 极简精美图标，修复直连逻辑报错
 
 # ███████████████████████████ 锚点区域 ███████████████████████████
 rule-anchor:
@@ -62,24 +62,27 @@ sniffer:
 
 # ███████████████████████████ 策略分组 ███████████████████████████
 proxy-groups:
-  - {name: 默认代理, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Rocket.png, proxies: [DIRECT, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
-  - {name: 油管, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/YouTube.png, proxies: [DIRECT, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
-  - {name: 国外媒体, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/MATCH.png, proxies: [DIRECT, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
-  - {name: Google, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Google.png, proxies: [DIRECT, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
-  - {name: AI, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/ChatGPT.png, proxies: [DIRECT, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
-  - {name: GitHub, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/GitHub.png, proxies: [DIRECT, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
-  - {name: OneDrive, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/OneDrive.png, proxies: [DIRECT, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
-  - {name: TikTok, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/TikTok.png, proxies: [DIRECT, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
-  - {name: Telegram, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Telegram.png, proxies: [DIRECT, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
-  - {name: NETFLIX, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Netflix.png, proxies: [DIRECT, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
-  - {name: 迪士尼, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Disney.png, proxies: [DIRECT, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
-  - {name: steam, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Gamepad.png, proxies: [DIRECT, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
-  - {name: Speedtest, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Speedtest.png, proxies: [DIRECT, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
-  - {name: PayPal, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/PayPal.png, proxies: [DIRECT, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
-  - {name: Apple, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Apple.png, proxies: [DIRECT, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
-  - {name: Microsoft, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Microsoft.png, proxies: [DIRECT, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
-  - {name: 国内直连, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/China.png, proxies: [DIRECT, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
-  - {name: 漏网之鱼, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/MATCH.png, proxies: [DIRECT, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
+  - {name: 默认代理, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Rocket.png, proxies: [直连, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
+  - {name: 油管, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/YouTube.png, proxies: [直连, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
+  - {name: 国外媒体, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/MATCH.png, proxies: [直连, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
+  - {name: Google, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Google.png, proxies: [直连, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
+  - {name: AI, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/ChatGPT.png, proxies: [直连, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
+  - {name: GitHub, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/GitHub.png, proxies: [直连, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
+  - {name: OneDrive, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/OneDrive.png, proxies: [直连, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
+  - {name: TikTok, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/TikTok.png, proxies: [直连, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
+  - {name: Telegram, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Telegram.png, proxies: [直连, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
+  - {name: NETFLIX, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Netflix.png, proxies: [直连, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
+  - {name: 迪士尼, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Disney.png, proxies: [直连, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
+  - {name: steam, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Gamepad.png, proxies: [直连, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
+  - {name: Speedtest, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Speedtest.png, proxies: [直连, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
+  - {name: PayPal, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/PayPal.png, proxies: [直连, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
+  - {name: Apple, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Apple.png, proxies: [直连, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
+  - {name: Microsoft, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Microsoft.png, proxies: [直连, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
+  - {name: 🎯 直连, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/China.png, proxies: [直连, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
+  - {name: 漏网之鱼, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/MATCH.png, proxies: [直连, 自动选择, ♻️ 香港智能, ♻️ 台湾智能, ♻️ 日本智能, ♻️ 狮城智能, ♻️ 美国智能, ♻️ 他国智能, 🔯 香港故转, 🔯 台湾故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 他国故转, 全部节点]}
+  
+  # ⚖️ 此处已完美对齐：创建“直连”专属选择组并注入内核原生 DIRECT 动作
+  - {name: 直连, type: select, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/China.png, proxies: [DIRECT]}
 
   # ══ 节点过滤区域 ══
   - {name: 香港节点, type: select, include-all: true, filter: "(?i)港|🇭🇰|hk|hongkong|hong kong", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/HK.png}
@@ -103,7 +106,7 @@ proxy-groups:
   - {name: ♻️ 日本智能, type: url-test, url: "http://www.gstatic.com/generate_204", interval: 600, include-all: true, filter: "(?=.*(日|🇯🇵|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/JP.png}
   - {name: ♻️ 狮城智能, type: url-test, url: "http://www.gstatic.com/generate_204", interval: 600, include-all: true, filter: "(?=.*(新加坡|🇸🇬|(?i)坡|狮城|SG|Singapore))^((?!(港|台|韩|日|美)).)*$", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/SG.png}
   - {name: ♻️ 美国智能, type: url-test, url: "http://www.gstatic.com/generate_204", interval: 600, include-all: true, filter: "(?=.*(美|🇺🇸|🇺🇲|US|(?i)States|America))^((?!(港|台|日|韩|新)).)*$", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/US.png}
-  - {name: ♻️ 他国智能, type: url-test, url: "http://www.gstatic.com/generate_204", interval: 600, include-all: true, filter: "^((?!(套餐|到期|有效|剩余|版本|已用|过期|失联|测试|官方|网址|备用|群|TEST|客服|网站|获取|订阅|流量|机场|机场|下次|官址|联系|邮箱|工单|学术|USE|USED|TOTAL|EXPIRE|EMAIL|官网|距离|更新|订阅|网站|流量|时间|到期|直连官网|距离|更新|订阅|网站|流量|时间|到期|直连|美|🇺🇸|🇺🇲|港|🇭🇰|台|🇹🇼|🇨🇳|日|🇯🇵|新|🇸🇬)).)*$", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/OT.png}
+  - {name: ♻️ 他国智能, type: url-test, url: "http://www.gstatic.com/generate_204", interval: 600, include-all: true, filter: "^((?!(套餐|到期|有效|剩余|版本|已用|过期|失联|测试|官方|网址|备用|群|TEST|客服|网站|获取|订阅|流量|机场|下次|官址|联系|邮箱|工单|学术|USE|USED|TOTAL|EXPIRE|EMAIL|官网|距离|更新|订阅|网站|流量|时间|到期|直连官网|距离|更新|订阅|网站|流量|时间|到期|直连|美|🇺🇸|🇺🇲|港|🇭🇰|台|🇹🇼|🇨🇳|日|🇯🇵|新|🇸🇬)).)*$", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/OT.png}
   - {name: 自动选择, type: url-test, url: "http://www.gstatic.com/generate_204", interval: 300, include-all: true, filter: "^((?!(套餐|到期|有效|剩余|版本|已用|过期|失联|测试|官方|网址|备用|群|TEST|客服|网站|获取|订阅|流量|机场|下次|官址|联系|邮箱|工单|学术|USE|USED|TOTAL|EXPIRE|EMAIL|官网|距离|更新|订阅|网站|流量|时间|到期|直连官网|距离|更新|订阅|网站|流量|时间|到期|直连)).)*$", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Rocket.png}
   - {name: 全部节点, type: select, include-all: true, filter: "^((?!(套餐|到期|有效|剩余|版本|已用|过期|失联|测试|官方|网址|备用|群|TEST|客服|网站|获取|订阅|流量|机场|下次|官址|联系|邮箱|工单|学术|USE|USED|TOTAL|EXPIRE|EMAIL|官网|距离|更新|订阅|网站|流量|时间|到期|直连)).)*$", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Category.png}
 
@@ -111,27 +114,27 @@ proxy-groups:
 
 # ███████████████████████████ 规则匹配 ███████████████████████████
 rules:
-  - DOMAIN,dns.alidns.com,国内直连
-  - DOMAIN,doh.pub,国内直连
+  - DOMAIN,dns.alidns.com,直连
+  - DOMAIN,doh.pub,直连
   - DOMAIN,doh.pubdefault,REJECT
   # 1. 局域网与本地直连（最高优先级）
   - RULE-SET,private_ip,直连,no-resolve
-  - RULE-SET,private_domain,国内直连
+  - RULE-SET,private_domain,直连
   # 广告拦截
   - RULE-SET,fakeipfilter_domain,REJECT-DROP
   
   # 2. 自定义特殊绕过与单机代理
-  - DOMAIN-SUFFIX,steamserver.net,国内直连
+  - DOMAIN-SUFFIX,steamserver.net,🎯 直连
   - DOMAIN-SUFFIX,qichiyu.com,默认代理
   - DOMAIN-KEYWORD,xn--,默认代理
   - DOMAIN-KEYWORD,光喵,默认代理
   - DOMAIN-KEYWORD,idsduf,默认代理
   
   # 全网 BT/PT 流量直连
-  - DOMAIN-KEYWORD,tracker,国内直连
-  - DOMAIN-KEYWORD,torrent,国内直连
-  - DOMAIN-KEYWORD,peer,国内直连
-  - DST-PORT,6881,国内直连
+  - DOMAIN-KEYWORD,tracker,直连
+  - DOMAIN-KEYWORD,torrent,直连
+  - DOMAIN-KEYWORD,peer,直连
+  - DST-PORT,6881,直连
   
   # 3. 垂直细分领域代理（MRS 高效匹配）
   - RULE-SET,ai_domain,AI
@@ -164,9 +167,9 @@ rules:
   - RULE-SET,proxylite_domain,默认代理
 
   # 6. 大类国内流量直连
-  - RULE-SET,cn_domain,国内直连
-  - RULE-SET,cnm_domain,国内直连
-  - RULE-SET,cn_ip,国内直连
+  - RULE-SET,cn_domain,🎯 直连
+  - RULE-SET,cnm_domain,🎯 直连
+  - RULE-SET,cn_ip,🎯 直连
   
   # 7. 终极兜底
   - MATCH,漏网之鱼
@@ -205,6 +208,6 @@ rule-providers:
   google_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/google.mrs" }
   telegram_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/telegram.mrs" }
   netflix_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/netflix.mrs" }
-  apple_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta-lite/geoip/apple.mrs" }
+  apple_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-lite/geoip/apple.mrs" }
 
 # ███████████████████████████ 配置结束 ███████████████████████████
