@@ -108,7 +108,7 @@ proxy-groups:
   - {name: ♻️ 他国智能, type: url-test, hidden: true, url: "http://www.gstatic.com/generate_204", interval: 600, include-all: true, filter: "^((?!(套餐|到期|有效|剩余|版本|已用|过期|失联|测试|官方|网址|备用|群|TEST|客服|网站|获取|订阅|流量|机场|下次|官址|联系|邮箱|工单|学术|USE|USED|TOTAL|EXPIRE|EMAIL|官网|距离|更新|订阅|网站|流量|时间|到期|直连官网|距离|更新|订阅|网站|流量|时间|到期|直连|美|🇺🇸|🇺🇲|港|🇭🇰|台|🇹🇼|🇨🇳|日|🇯🇵|新|🇸🇬)).)*$", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/OT.png}
   
   # ══ 自动测速组（保留前台显示） ══
-  - {name: 自动选择, type: url-test, url: "http://www.gstatic.com/generate_204", interval: 300, include-all: true, filter: "^((?!(套餐|到期|有效|剩余|版本|已用|过期|失联|测试|官方|网址|备用|群|TEST|客服|网站|获取|订阅|流量|机场|下次|官址|联系|邮箱|工单|学术|USE|USED|TOTAL|EXPIRE|EMAIL|官网|距离|更新|订阅|网站|流量|时间|到期|直连官网|距离|更新|订阅|网站|流量|时间|到期|直连)).)*$", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Rocket.png}
+  - {name: 自动选择, type: url-test, url: "http://www.gstatic.com/generate_204", interval: 300, include-all: true, filter: "^((?!(套餐|到期|有效|剩余|版本|已用|过期|失联|测试|官方|网址|备用|群|TEST|客服|网站|获取|订阅|流量|机场|下次|官址|联系|邮箱|工单|学术|USE|USED|TOTAL|EXPIRE|EMAIL|官网|距离|更新|订阅|网站|流量|时间|到期|直连官网|距离|更新|订阅|网站|流量|时间|到期|直连)).)*$", icon: https://images.icon-icons.com/1454/PNG/256/alien_99415.png}
 
 
 
