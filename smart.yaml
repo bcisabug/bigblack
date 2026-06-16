@@ -84,27 +84,27 @@ proxy-groups:
   - {name: 全部节点, type: select, icon: https://images.icon-icons.com/1648/PNG/512/10100ghost_110009.png, include-all: true, filter: "^((?!(套餐|到期|有效|剩余|版本|已用|过期|失联|测试|官方|网址|备用|群|TEST|客服|网站|获取|订阅|流量|机场|下次|官址|联系|邮箱|工单|学术|USE|USED|TOTAL|EXPIRE|EMAIL|官网|距离|更新|订阅|网站|流量|时间|到期|直连)).)*$"}
 
   # ══ 基础区域节点过滤（前台可见） ══
-  - {name: 香港节点, type: select, include-all: true, filter: "(?i)港|🇭🇰|hk|hongkong|hong kong", icon: https://images.icon-icons.com/45/PNG/64/hongkong_flags_flag_8973.png}
-  - {name: 台湾节点, type: select, include-all: true, filter: "台|(?i)湾|🇹🇼|🇨🇳", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/TW.png}
-  - {name: 日本节点, type: select, include-all: true, filter: "(?i)日|jp|🇯🇵|japan", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/JP.png}
-  - {name: 狮城节点, type: select, include-all: true, filter: "(?i)新加坡|坡|狮城|🇸🇬|SG|Singapore", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/SG.png}
-  - {name: 美国节点, type: select, include-all: true, filter: "(?i)美|🇺🇸|🇺🇲|unitedstates|united states", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/US.png}
+  - {name: 香港节点, type: select, include-all: true, filter: "(?i)港|🇭🇰|hk|hongkong|hong kong", icon: https://images.icon-icons.com/1694/PNG/512/hkhongkongsarchinaflag_111745.png}
+  - {name: 台湾节点, type: select, include-all: true, filter: "台|(?i)湾|🇹🇼|🇨🇳", icon: https://images.icon-icons.com/1694/PNG/512/twtaiwanflag_111952.png}
+  - {name: 日本节点, type: select, include-all: true, filter: "(?i)日|jp|🇯🇵|japan", icon: https://images.icon-icons.com/1694/PNG/512/jpjapanflag_111832.png}
+  - {name: 狮城节点, type: select, include-all: true, filter: "(?i)新加坡|坡|狮城|🇸🇬|SG|Singapore", icon: https://images.icon-icons.com/1694/PNG/512/sgsingaporeflag_111984.png}
+  - {name: 美国节点, type: select, include-all: true, filter: "(?i)美|🇺🇸|🇺🇲|unitedstates|united states", icon: https://images.icon-icons.com/230/PNG/256/UnitedStates_US_USA_840_Flag1_26093.png}
   - {name: 他国节点, type: select, include-all: true, filter: "^((?!(套餐|到期|有效|剩余|版本|已用|过期|失联|测试|官方|网址|备用|群|TEST|客服|网站|获取|订阅|流量|机场|下次|官址|联系|邮箱|工单|学术|USE|USED|TOTAL|EXPIRE|EMAIL|官网|距离|更新|订阅|网站|流量|时间|到期|直连官网|距离|更新|订阅|网站|流量|时间|到期|直连|美|🇺🇸|🇺🇲|港|🇭🇰|台|🇹🇼|🇨🇳|日|🇯🇵|新|🇸🇬)).)*$", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/OT.png}
   
   # ══ 故转组（已加 hidden 隐藏） ══
-  - {name: 🔯 香港故转, type: fallback, hidden: true, lazy: false, interval: 180, proxies: [ 香港节点, ♻️ 香港智能], icon: https://images.icon-icons.com/45/PNG/64/hongkong_flags_flag_8973.png}
-  - {name: 🔯 台湾故转, type: fallback, hidden: true, lazy: false, interval: 180, proxies: [ 台湾节点, ♻️ 台湾智能], icon: https://github.com/Seven1echo/Yaml/raw/main/icons/TW.png}
-  - {name: 🔯 日本故转, type: fallback, hidden: true, lazy: false, interval: 180, proxies: [ 日本节点, ♻️ 日本智能], icon: https://github.com/Seven1echo/Yaml/raw/main/icons/JP.png}
-  - {name: 🔯 狮城故转, type: fallback, hidden: true, lazy: false, interval: 180, proxies: [ 狮城节点, ♻️ 狮城智能], icon: https://github.com/Seven1echo/Yaml/raw/main/icons/SG.png}
-  - {name: 🔯 美国故转, type: fallback, hidden: true, lazy: false, interval: 180, proxies: [ 美国节点, ♻️ 美国智能], icon: https://github.com/Seven1echo/Yaml/raw/main/icons/US.png}
+  - {name: 🔯 香港故转, type: fallback, hidden: true, lazy: false, interval: 180, proxies: [ 香港节点, ♻️ 香港智能], icon: https://images.icon-icons.com/1694/PNG/512/hkhongkongsarchinaflag_111745.png}
+  - {name: 🔯 台湾故转, type: fallback, hidden: true, lazy: false, interval: 180, proxies: [ 台湾节点, ♻️ 台湾智能], icon: https://images.icon-icons.com/1694/PNG/512/twtaiwanflag_111952.png}
+  - {name: 🔯 日本故转, type: fallback, hidden: true, lazy: false, interval: 180, proxies: [ 日本节点, ♻️ 日本智能], icon: https://images.icon-icons.com/1694/PNG/512/jpjapanflag_111832.png}
+  - {name: 🔯 狮城故转, type: fallback, hidden: true, lazy: false, interval: 180, proxies: [ 狮城节点, ♻️ 狮城智能], icon: https://images.icon-icons.com/1694/PNG/512/sgsingaporeflag_111984.png}
+  - {name: 🔯 美国故转, type: fallback, hidden: true, lazy: false, interval: 180, proxies: [ 美国节点, ♻️ 美国智能], icon: https://images.icon-icons.com/230/PNG/256/UnitedStates_US_USA_840_Flag1_26093.png}
   - {name: 🔯 他国故转, type: fallback, hidden: true, lazy: false, interval: 180, proxies: [ 他国节点, ♻️ 他国智能], icon: https://github.com/Seven1echo/Yaml/raw/main/icons/OT.png}
   
   # ══ 智能测速组（已加 hidden 隐藏） ══
-  - {name: ♻️ 香港智能, type: url-test, hidden: true, url: "http://www.gstatic.com/generate_204", interval: 600, include-all: true, filter: "(?=.*(港|🇭🇰|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$", icon: https://images.icon-icons.com/45/PNG/64/hongkong_flags_flag_8973.png}
-  - {name: ♻️ 台湾智能, type: url-test, hidden: true, url: "http://www.gstatic.com/generate_204", interval: 600, include-all: true, filter: "(?=.*(台|(?i)湾|🇹🇼|🇨🇳))^((?!(日|韩|新|深|美)).)*$", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/TW.png}
-  - {name: ♻️ 日本智能, type: url-test, hidden: true, url: "http://www.gstatic.com/generate_204", interval: 600, include-all: true, filter: "(?=.*(日|🇯🇵|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/JP.png}
-  - {name: ♻️ 狮城智能, type: url-test, hidden: true, url: "http://www.gstatic.com/generate_204", interval: 600, include-all: true, filter: "(?=.*(新加坡|🇸🇬|(?i)坡|狮城|SG|Singapore))^((?!(港|台|韩|日|美)).)*$", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/SG.png}
-  - {name: ♻️ 美国智能, type: url-test, hidden: true, url: "http://www.gstatic.com/generate_204", interval: 600, include-all: true, filter: "(?=.*(美|🇺🇸|🇺🇲|US|(?i)States|America))^((?!(港|台|日|韩|新)).)*$", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/US.png}
+  - {name: ♻️ 香港智能, type: url-test, hidden: true, url: "http://www.gstatic.com/generate_204", interval: 600, include-all: true, filter: "(?=.*(港|🇭🇰|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$", icon: https://images.icon-icons.com/1694/PNG/512/hkhongkongsarchinaflag_111745.png}
+  - {name: ♻️ 台湾智能, type: url-test, hidden: true, url: "http://www.gstatic.com/generate_204", interval: 600, include-all: true, filter: "(?=.*(台|(?i)湾|🇹🇼|🇨🇳))^((?!(日|韩|新|深|美)).)*$", icon: https://images.icon-icons.com/1694/PNG/512/twtaiwanflag_111952.png}
+  - {name: ♻️ 日本智能, type: url-test, hidden: true, url: "http://www.gstatic.com/generate_204", interval: 600, include-all: true, filter: "(?=.*(日|🇯🇵|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$", icon: https://images.icon-icons.com/1694/PNG/512/jpjapanflag_111832.png}
+  - {name: ♻️ 狮城智能, type: url-test, hidden: true, url: "http://www.gstatic.com/generate_204", interval: 600, include-all: true, filter: "(?=.*(新加坡|🇸🇬|(?i)坡|狮城|SG|Singapore))^((?!(港|台|韩|日|美)).)*$", icon: https://images.icon-icons.com/1694/PNG/512/sgsingaporeflag_111984.png}
+  - {name: ♻️ 美国智能, type: url-test, hidden: true, url: "http://www.gstatic.com/generate_204", interval: 600, include-all: true, filter: "(?=.*(美|🇺🇸|🇺🇲|US|(?i)States|America))^((?!(港|台|日|韩|新)).)*$", icon: https://images.icon-icons.com/230/PNG/256/UnitedStates_US_USA_840_Flag1_26093.png}
   - {name: ♻️ 他国智能, type: url-test, hidden: true, url: "http://www.gstatic.com/generate_204", interval: 600, include-all: true, filter: "^((?!(套餐|到期|有效|剩余|版本|已用|过期|失联|测试|官方|网址|备用|群|TEST|客服|网站|获取|订阅|流量|机场|下次|官址|联系|邮箱|工单|学术|USE|USED|TOTAL|EXPIRE|EMAIL|官网|距离|更新|订阅|网站|流量|时间|到期|直连官网|距离|更新|订阅|网站|流量|时间|到期|直连|美|🇺🇸|🇺🇲|港|🇭🇰|台|🇹🇼|🇨🇳|日|🇯🇵|新|🇸🇬)).)*$", icon: https://github.com/Seven1echo/Yaml/raw/main/icons/OT.png}
   
   # ══ 自动测速组（保留前台显示） ══
