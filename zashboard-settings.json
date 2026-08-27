@@ -54,6 +54,7 @@
   "config/speedtest-url": "https://cp.cloudflare.com/generate_204",
   "config/independent-latency-test": "false",
   "config/table-grouping": "[\"chains\"]",
+  "config/earth-projection": "2d",
   "config/show-full-proxy-chain": "true",
   "config/geoip-asn-database-url": "https://testingcf.jsdelivr.net/gh/P3TERX/GeoLite.mmdb@download/GeoLite2-ASN.mmdb",
   "config/auto-ip-check": "true",
