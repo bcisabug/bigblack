@@ -1,7 +1,7 @@
 # 机场订阅1.2 lazy：true
 proxy-providers:
   "1.光喵":
-    url: "http://192.168.5.1:3008/BAOHAO123/download/4"
+    url: "#########"
     type: http
     interval: 86400
     health-check:
@@ -18,7 +18,7 @@ proxy-providers:
       client-fingerprint: chrome
 
   "2.牛逼":
-    url: "http://192.168.5.1:3008/BAOHAO123/download/2"
+    url: "######"
     type: http
     interval: 86400
     health-check:
@@ -35,7 +35,7 @@ proxy-providers:
       client-fingerprint: chrome
 
   "3.一元":
-    url: "http://192.168.5.1:3008/BAOHAO123/download/1"
+    url: "###########"
     type: http
     interval: 86400
     health-check:
@@ -52,7 +52,7 @@ proxy-providers:
       client-fingerprint: chrome
 
   "4.钢蛋":
-    url: "http://192.168.5.1:3008/BAOHAO123/download/3"
+    url: "##########"
     type: http
     interval: 86400
     health-check:
