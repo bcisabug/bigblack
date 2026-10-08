@@ -541,11 +541,13 @@ rules:
 - RULE-SET,google_ip,🐬 云服务
 - RULE-SET,netflix_ip,🌍 流媒体
 - RULE-SET,telegram_ip,📲 Telegram
-- RULE-SET,video_domain,🌍 流媒体
-- RULE-SET,gfw_domain,🚀 默认代理
-- RULE-SET,proxylite_domain,🚀 默认代理
+- RULE-SET,video_domain,📲 Telegram
 - RULE-SET,cn_domain,🎯 国内直连
 - RULE-SET,cnm_domain,🎯 国内直连
+- RULE-SET,media_domain,🌍 流媒体
+- RULE-SET,games_domain,🎮︎ steam
+- RULE-SET,gfw_domain,🚀 默认代理
+- RULE-SET,proxylite_domain,🚀 默认代理
 - RULE-SET,cn_ip,🎯 国内直连
 - MATCH,🐠 漏网之鱼
 
@@ -760,3 +762,17 @@ rule-providers:
     format: mrs
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo-lite/geoip/apple.mrs
     path: ./rule-providers/apple_ip.mrs
+  media_domain:
+    type: http
+    interval: 86400
+    behavior: domain
+    format: mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-media.mrs
+    path: ./rule-providers/media_domain.mrs
+  games_domain:
+    type: http
+    interval: 86400
+    behavior: domain
+    format: mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games-!cn.mrs
+    path: ./rule-providers/games_domain.mrs
