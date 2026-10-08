@@ -507,650 +507,147 @@ proxy-groups:
 rules:
 - DOMAIN,dns.alidns.com,直连
 - DOMAIN,doh.pub,直连
-- RULE-SET,ip_private,直连,no-resolve
-- RULE-SET,domain_private,直连
-- RULE-SET,ads_domain,REJECT-DROP
+- DOMAIN,doh.pubdefault,REJECT
+- RULE-SET,private_ip,直连,no-resolve
+- RULE-SET,private_domain,直连
+- RULE-SET,fakeipfilter_domain,REJECT-DROP
 - DOMAIN-SUFFIX,steamserver.net,🎯 国内直连
 - DOMAIN-SUFFIX,qichiyu.com,🚀 默认代理
 - DOMAIN-KEYWORD,xn--,🚀 默认代理
 - DOMAIN-KEYWORD,光喵,🚀 默认代理
 - DOMAIN-KEYWORD,idsduf,🚀 默认代理
-- DOMAIN-SUFFIX,tw,🚀 默认代理
-- DOMAIN-SUFFIX,duoduo.uno,🚀 默认代理
 - DOMAIN-KEYWORD,tracker,直连
 - DOMAIN-KEYWORD,torrent,直连
+- DOMAIN-KEYWORD,peer,直连
 - DST-PORT,6881,直连
-- RULE-SET,domain_apple-cn,🎯 国内直连
-- RULE-SET,domain_microsoft_at_cn,🎯 国内直连
-- RULE-SET,domain_google-cn,🎯 国内直连
-- RULE-SET,domain_steam_at_cn,🎯 国内直连
-- RULE-SET,domain_bilibili,🎯 国内直连
-- RULE-SET,domain_openai,👽︎ AI
-- RULE-SET,domain_anthropic,👽︎ AI
-- RULE-SET,domain_google-gemini,👽︎ AI
-- RULE-SET,domain_perplexity,👽︎ AI
-- RULE-SET,domain_xai,👽︎ AI
-- RULE-SET,domain_groq,👽︎ AI
-- RULE-SET,domain_cursor,👽︎ AI
-- RULE-SET,domain_github-copilot,👽︎ AI
-- RULE-SET,domain_huggingface,👽︎ AI
-- RULE-SET,domain_youtube,📺 油管
-- RULE-SET,domain_netflix,🌍 流媒体
-- RULE-SET,domain_disney,🌍 流媒体
-- RULE-SET,domain_primevideo,🌍 流媒体
-- RULE-SET,domain_hbo,🌍 流媒体
-- RULE-SET,domain_apple-tvplus,🌍 流媒体
-- RULE-SET,domain_spotify,🌍 流媒体
-- RULE-SET,domain_twitch,🌍 流媒体
-- RULE-SET,domain_hulu,🌍 流媒体
-- RULE-SET,domain_abema,🌍 流媒体
-- RULE-SET,domain_bahamut,🌍 流媒体
-- RULE-SET,domain_dailymotion,🌍 流媒体
-- RULE-SET,domain_tiktok,📲 Telegram
-- RULE-SET,domain_telegram,📲 Telegram
-- RULE-SET,domain_twitter,📲 Telegram
-- RULE-SET,domain_facebook,📲 Telegram
-- RULE-SET,domain_instagram,📲 Telegram
-- RULE-SET,domain_whatsapp,📲 Telegram
-- RULE-SET,domain_reddit,📲 Telegram
-- RULE-SET,domain_discord,📲 Telegram
-- RULE-SET,domain_linkedin,📲 Telegram
-- RULE-SET,domain_pinterest,📲 Telegram
-- RULE-SET,domain_signal,📲 Telegram
-- RULE-SET,domain_line,📲 Telegram
-- RULE-SET,domain_kakao,📲 Telegram
-- RULE-SET,domain_github,👨🏿‍💻 GitHub
-- RULE-SET,domain_gitlab,👨🏿‍💻 GitHub
-- RULE-SET,domain_docker,👨🏿‍💻 GitHub
-- RULE-SET,domain_npmjs,👨🏿‍💻 GitHub
-- RULE-SET,domain_jetbrains,👨🏿‍💻 GitHub
-- RULE-SET,domain_stackexchange,👨🏿‍💻 GitHub
-- RULE-SET,domain_steam,🎮︎ steam
-- RULE-SET,domain_epicgames,🎮︎ steam
-- RULE-SET,domain_xbox,🎮︎ steam
-- RULE-SET,domain_playstation,🎮︎ steam
-- RULE-SET,domain_nintendo,🎮︎ steam
-- RULE-SET,domain_roblox,🎮︎ steam
-- RULE-SET,domain_ea,🎮︎ steam
-- RULE-SET,domain_ubisoft,🎮︎ steam
-- RULE-SET,domain_blizzard,🎮︎ steam
-- RULE-SET,domain_icloud,🐬 云服务
-- RULE-SET,domain_onedrive,🐬 云服务
-- RULE-SET,domain_dropbox,🐬 云服务
-- RULE-SET,domain_google,🐬 云服务
-- RULE-SET,domain_amazon,🐬 云服务
-- RULE-SET,domain_cloudflare,🐬 云服务
-- RULE-SET,domain_oracle,🐬 云服务
-- RULE-SET,domain_digitalocean,🐬 云服务
-- RULE-SET,domain_notion,🐬 云服务
-- RULE-SET,domain_slack,🐬 云服务
-- RULE-SET,domain_zoom,🐬 云服务
+- RULE-SET,ai_domain,👽︎ AI
+- RULE-SET,github_domain,👨🏿‍💻 GitHub
+- RULE-SET,youtube_domain,📺 油管
+- RULE-SET,steam_domain,🎮︎ steam
+- RULE-SET,Nintendo_domain,🎮︎ steam
+- RULE-SET,Epic_domain,🎮︎ steam
+- RULE-SET,Origin_domain,🎮︎ steam
+- RULE-SET,google_domain,🐬 云服务
+- RULE-SET,onedrive_domain,🐬 云服务
+- RULE-SET,microsoft_domain,🎯 国内直连
 - RULE-SET,apple_domain,🎯 国内直连
-- RULE-SET,domain_microsoft,🎯 国内直连
-- RULE-SET,paypal_domain,💶 PayPal
+- RULE-SET,tiktok_domain,📲 Telegram
+- RULE-SET,telegram_domain,📲 Telegram
 - RULE-SET,speedtest_domain,✈️ Speedtest
-- RULE-SET,domain_cn,🎯 国内直连
+- RULE-SET,netflix_domain,🌍 流媒体
+- RULE-SET,disney_domain,🌍 流媒体
+- RULE-SET,paypal_domain,💶 PayPal
+- RULE-SET,apple_ip,🎯 国内直连
+- RULE-SET,google_ip,🐬 云服务
+- RULE-SET,netflix_ip,🌍 流媒体
+- RULE-SET,telegram_ip,📲 Telegram
+- RULE-SET,video_domain,🌍 流媒体
+- RULE-SET,gfw_domain,🚀 默认代理
+- RULE-SET,proxylite_domain,🚀 默认代理
+- RULE-SET,cn_domain,🎯 国内直连
 - RULE-SET,cnm_domain,🎯 国内直连
-- RULE-SET,domain_category-ai-not_cn,👽︎ AI
-- RULE-SET,domain_category-media,🌍 流媒体
-- RULE-SET,domain_category-social-media-not_cn,📲 Telegram
-- RULE-SET,domain_category-games-not_cn,🎮︎ steam
-- RULE-SET,domain_gfw,🚀 默认代理
-- RULE-SET,domain_geolocation-not_cn,🚀 默认代理
-- RULE-SET,apple_ip,🎯 国内直连,no-resolve
-- RULE-SET,google_ip,🐬 云服务,no-resolve
-- RULE-SET,netflix_ip,🌍 流媒体,no-resolve
-- RULE-SET,telegram_ip,📲 Telegram,no-resolve
-- RULE-SET,ip_cn,🎯 国内直连,no-resolve
+- RULE-SET,cn_ip,🎯 国内直连
 - MATCH,🐠 漏网之鱼
 
 rule-providers:
-  domain_private:
+  fakeipfilter_domain:
     type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs
-    path: ./rule-providers/domain_private.mrs
-  ip_private:
-    type: http
-    interval: 86400
-    behavior: ipcidr
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.mrs
-    path: ./rule-providers/ip_private.mrs
-  domain_tracker:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tracker.mrs
-    path: ./rule-providers/domain_tracker.mrs
-  domain_gfw:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/gfw.mrs
-    path: ./rule-providers/domain_gfw.mrs
-  domain_geolocation-not_cn:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs
-    path: ./rule-providers/domain_geolocation-not_cn.mrs
-  domain_category-ai-not_cn:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.mrs
-    path: ./rule-providers/domain_category-ai-not_cn.mrs
-  domain_openai:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/openai.mrs
-    path: ./rule-providers/domain_openai.mrs
-  domain_anthropic:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/anthropic.mrs
-    path: ./rule-providers/domain_anthropic.mrs
-  domain_google-gemini:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google-gemini.mrs
-    path: ./rule-providers/domain_google-gemini.mrs
-  domain_perplexity:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/perplexity.mrs
-    path: ./rule-providers/domain_perplexity.mrs
-  domain_xai:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/xai.mrs
-    path: ./rule-providers/domain_xai.mrs
-  domain_groq:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/groq.mrs
-    path: ./rule-providers/domain_groq.mrs
-  domain_cursor:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cursor.mrs
-    path: ./rule-providers/domain_cursor.mrs
-  domain_github-copilot:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github-copilot.mrs
-    path: ./rule-providers/domain_github-copilot.mrs
-  domain_huggingface:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/huggingface.mrs
-    path: ./rule-providers/domain_huggingface.mrs
-  domain_category-media:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-media.mrs
-    path: ./rule-providers/domain_category-media.mrs
-  domain_youtube:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs
-    path: ./rule-providers/domain_youtube.mrs
-  domain_netflix:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs
-    path: ./rule-providers/domain_netflix.mrs
-  domain_disney:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/disney.mrs
-    path: ./rule-providers/domain_disney.mrs
-  domain_primevideo:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/primevideo.mrs
-    path: ./rule-providers/domain_primevideo.mrs
-  domain_hbo:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/hbo.mrs
-    path: ./rule-providers/domain_hbo.mrs
-  domain_apple-tvplus:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-tvplus.mrs
-    path: ./rule-providers/domain_apple-tvplus.mrs
-  domain_spotify:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/spotify.mrs
-    path: ./rule-providers/domain_spotify.mrs
-  domain_tiktok:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs
-    path: ./rule-providers/domain_tiktok.mrs
-  domain_twitch:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/twitch.mrs
-    path: ./rule-providers/domain_twitch.mrs
-  domain_hulu:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/hulu.mrs
-    path: ./rule-providers/domain_hulu.mrs
-  domain_abema:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/abema.mrs
-    path: ./rule-providers/domain_abema.mrs
-  domain_bahamut:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bahamut.mrs
-    path: ./rule-providers/domain_bahamut.mrs
-  domain_bilibili:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bilibili.mrs
-    path: ./rule-providers/domain_bilibili.mrs
-  domain_dailymotion:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/dailymotion.mrs
-    path: ./rule-providers/domain_dailymotion.mrs
-  domain_category-social-media-not_cn:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-social-media-!cn.mrs
-    path: ./rule-providers/domain_category-social-media-not_cn.mrs
-  domain_telegram:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs
-    path: ./rule-providers/domain_telegram.mrs
-  domain_twitter:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/twitter.mrs
-    path: ./rule-providers/domain_twitter.mrs
-  domain_facebook:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/facebook.mrs
-    path: ./rule-providers/domain_facebook.mrs
-  domain_instagram:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/instagram.mrs
-    path: ./rule-providers/domain_instagram.mrs
-  domain_whatsapp:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/whatsapp.mrs
-    path: ./rule-providers/domain_whatsapp.mrs
-  domain_reddit:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/reddit.mrs
-    path: ./rule-providers/domain_reddit.mrs
-  domain_discord:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/discord.mrs
-    path: ./rule-providers/domain_discord.mrs
-  domain_linkedin:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/linkedin.mrs
-    path: ./rule-providers/domain_linkedin.mrs
-  domain_pinterest:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/pinterest.mrs
-    path: ./rule-providers/domain_pinterest.mrs
-  domain_signal:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/signal.mrs
-    path: ./rule-providers/domain_signal.mrs
-  domain_line:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/line.mrs
-    path: ./rule-providers/domain_line.mrs
-  domain_kakao:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/kakao.mrs
-    path: ./rule-providers/domain_kakao.mrs
-  domain_icloud:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/icloud.mrs
-    path: ./rule-providers/domain_icloud.mrs
-  domain_onedrive:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/onedrive.mrs
-    path: ./rule-providers/domain_onedrive.mrs
-  domain_dropbox:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/dropbox.mrs
-    path: ./rule-providers/domain_dropbox.mrs
-  domain_google:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs
-    path: ./rule-providers/domain_google.mrs
-  domain_microsoft:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs
-    path: ./rule-providers/domain_microsoft.mrs
-  domain_amazon:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/amazon.mrs
-    path: ./rule-providers/domain_amazon.mrs
-  domain_cloudflare:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cloudflare.mrs
-    path: ./rule-providers/domain_cloudflare.mrs
-  domain_oracle:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/oracle.mrs
-    path: ./rule-providers/domain_oracle.mrs
-  domain_digitalocean:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/digitalocean.mrs
-    path: ./rule-providers/domain_digitalocean.mrs
-  domain_notion:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/notion.mrs
-    path: ./rule-providers/domain_notion.mrs
-  domain_slack:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/slack.mrs
-    path: ./rule-providers/domain_slack.mrs
-  domain_zoom:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/zoom.mrs
-    path: ./rule-providers/domain_zoom.mrs
-  domain_github:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs
-    path: ./rule-providers/domain_github.mrs
-  domain_gitlab:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/gitlab.mrs
-    path: ./rule-providers/domain_gitlab.mrs
-  domain_docker:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/docker.mrs
-    path: ./rule-providers/domain_docker.mrs
-  domain_npmjs:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/npmjs.mrs
-    path: ./rule-providers/domain_npmjs.mrs
-  domain_jetbrains:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/jetbrains.mrs
-    path: ./rule-providers/domain_jetbrains.mrs
-  domain_stackexchange:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/stackexchange.mrs
-    path: ./rule-providers/domain_stackexchange.mrs
-  domain_category-games-not_cn:
-    type: http
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games-!cn.mrs
-    path: ./rule-providers/domain_category-games-not_cn.mrs
-  domain_steam:
-    type: http
-    interval: 86400
     behavior: domain
     format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam.mrs
-    path: ./rule-providers/domain_steam.mrs
-  domain_epicgames:
-    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ads-all.mrs
     interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/epicgames.mrs
-    path: ./rule-providers/domain_epicgames.mrs
-  domain_xbox:
+    path: ./rule-providers/fakeipfilter_domain.mrs
+  private_domain:
     type: http
     interval: 86400
     behavior: domain
     format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/xbox.mrs
-    path: ./rule-providers/domain_xbox.mrs
-  domain_playstation:
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/private.mrs
+    path: ./rule-providers/private_domain.mrs
+  proxylite_domain:
     type: http
     interval: 86400
     behavior: domain
     format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/playstation.mrs
-    path: ./rule-providers/domain_playstation.mrs
-  domain_nintendo:
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/geolocation-!cn.mrs
+    path: ./rule-providers/proxylite_domain.mrs
+  ai_domain:
     type: http
     interval: 86400
     behavior: domain
     format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/nintendo.mrs
-    path: ./rule-providers/domain_nintendo.mrs
-  domain_roblox:
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ai-!cn.mrs
+    path: ./rule-providers/ai_domain.mrs
+  youtube_domain:
     type: http
     interval: 86400
     behavior: domain
     format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/roblox.mrs
-    path: ./rule-providers/domain_roblox.mrs
-  domain_ea:
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/youtube.mrs
+    path: ./rule-providers/youtube_domain.mrs
+  google_domain:
     type: http
     interval: 86400
     behavior: domain
     format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ea.mrs
-    path: ./rule-providers/domain_ea.mrs
-  domain_ubisoft:
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/google.mrs
+    path: ./rule-providers/google_domain.mrs
+  steam_domain:
     type: http
     interval: 86400
     behavior: domain
     format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ubisoft.mrs
-    path: ./rule-providers/domain_ubisoft.mrs
-  domain_blizzard:
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/steam.mrs
+    path: ./rule-providers/steam_domain.mrs
+  Nintendo_domain:
     type: http
     interval: 86400
     behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/blizzard.mrs
-    path: ./rule-providers/domain_blizzard.mrs
-  domain_apple-cn:
+    format: yaml
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/nintendo.yaml
+    path: ./rule-providers/Nintendo_domain.yaml
+  Epic_domain:
     type: http
     interval: 86400
     behavior: domain
     format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-cn.mrs
-    path: ./rule-providers/domain_apple-cn.mrs
-  domain_microsoft_at_cn:
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/epicgames.mrs
+    path: ./rule-providers/Epic_domain.mrs
+  Origin_domain:
     type: http
     interval: 86400
     behavior: domain
     format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft%40cn.mrs
-    path: ./rule-providers/domain_microsoft_at_cn.mrs
-  domain_google-cn:
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/ea.mrs
+    path: ./rule-providers/Origin_domain.mrs
+  github_domain:
     type: http
     interval: 86400
     behavior: domain
     format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google-cn.mrs
-    path: ./rule-providers/domain_google-cn.mrs
-  domain_steam_at_cn:
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/github.mrs
+    path: ./rule-providers/github_domain.mrs
+  telegram_domain:
     type: http
     interval: 86400
     behavior: domain
     format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam%40cn.mrs
-    path: ./rule-providers/domain_steam_at_cn.mrs
-  domain_cn:
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/telegram.mrs
+    path: ./rule-providers/telegram_domain.mrs
+  netflix_domain:
     type: http
     interval: 86400
     behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs
-    path: ./rule-providers/domain_cn.mrs
-  ip_cn:
-    type: http
-    interval: 86400
-    behavior: ipcidr
     format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs
-    path: ./rule-providers/ip_cn.mrs
-  apple_domain:
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/netflix.mrs
+    path: ./rule-providers/netflix_domain.mrs
+  disney_domain:
     type: http
     interval: 86400
     behavior: domain
     format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/apple.mrs
-    path: ./rule-providers/apple_domain.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/disney.mrs
+    path: ./rule-providers/disney_domain.mrs
   paypal_domain:
     type: http
     interval: 86400
@@ -1158,6 +655,27 @@ rule-providers:
     format: mrs
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/paypal.mrs
     path: ./rule-providers/paypal_domain.mrs
+  onedrive_domain:
+    type: http
+    interval: 86400
+    behavior: domain
+    format: mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/onedrive.mrs
+    path: ./rule-providers/onedrive_domain.mrs
+  microsoft_domain:
+    type: http
+    interval: 86400
+    behavior: domain
+    format: mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/microsoft.mrs
+    path: ./rule-providers/microsoft_domain.mrs
+  apple_domain:
+    type: http
+    interval: 86400
+    behavior: domain
+    format: mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/apple.mrs
+    path: ./rule-providers/apple_domain.mrs
   speedtest_domain:
     type: http
     interval: 86400
@@ -1165,6 +683,27 @@ rule-providers:
     format: mrs
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/ookla-speedtest.mrs
     path: ./rule-providers/speedtest_domain.mrs
+  tiktok_domain:
+    type: http
+    interval: 86400
+    behavior: domain
+    format: mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/tiktok.mrs
+    path: ./rule-providers/tiktok_domain.mrs
+  gfw_domain:
+    type: http
+    interval: 86400
+    behavior: domain
+    format: mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/gfw.mrs
+    path: ./rule-providers/gfw_domain.mrs
+  cn_domain:
+    type: http
+    interval: 86400
+    behavior: domain
+    format: mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.mrs
+    path: ./rule-providers/cn_domain.mrs
   cnm_domain:
     type: http
     interval: 86400
@@ -1172,13 +711,27 @@ rule-providers:
     format: mrs
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-media-cn.mrs
     path: ./rule-providers/cnm_domain.mrs
-  apple_ip:
+  video_domain:
+    type: http
+    interval: 86400
+    behavior: domain
+    format: mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-social-media-!cn.mrs
+    path: ./rule-providers/video_domain.mrs
+  private_ip:
     type: http
     interval: 86400
     behavior: ipcidr
     format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo-lite/geoip/apple.mrs
-    path: ./rule-providers/apple_ip.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/private.mrs
+    path: ./rule-providers/private_ip.mrs
+  cn_ip:
+    type: http
+    interval: 86400
+    behavior: ipcidr
+    format: mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cn.mrs
+    path: ./rule-providers/cn_ip.mrs
   google_ip:
     type: http
     interval: 86400
@@ -1186,13 +739,6 @@ rule-providers:
     format: mrs
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/google.mrs
     path: ./rule-providers/google_ip.mrs
-  netflix_ip:
-    type: http
-    interval: 86400
-    behavior: ipcidr
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/netflix.mrs
-    path: ./rule-providers/netflix_ip.mrs
   telegram_ip:
     type: http
     interval: 86400
@@ -1200,10 +746,17 @@ rule-providers:
     format: mrs
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/telegram.mrs
     path: ./rule-providers/telegram_ip.mrs
-  ads_domain:
+  netflix_ip:
     type: http
     interval: 86400
-    behavior: domain
+    behavior: ipcidr
     format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.mrs
-    path: ./rule-providers/ads_domain.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/netflix.mrs
+    path: ./rule-providers/netflix_ip.mrs
+  apple_ip:
+    type: http
+    interval: 86400
+    behavior: ipcidr
+    format: mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo-lite/geoip/apple.mrs
+    path: ./rule-providers/apple_ip.mrs
