@@ -1,10 +1,6 @@
 # Nextin 订阅模板专用：保留分类、图标、隐藏方式及分流规则。
 # 地区组显式 REJECT 成员用于避免无匹配节点时组为空。
 # 地区手动组初次可能选中 REJECT，有节点时请手动选择实际节点。
-x-nextin:
-  version: 1
-  mode: subscription-template
-proxies: []
 proxy-groups:
 - name: 🚀 默认代理
   type: select
