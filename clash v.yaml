@@ -305,7 +305,7 @@ proxy-groups:
   empty-fallback: REJECT
   type: select
   filter: (?i)(美国|美國|美|🇺🇸|🇺🇲|\bUS\b|\bUSA\b|United[ _-]*States|America|\bUS[0-9]+)
-  icon: hhttps://nationalflag.io/4x3/us.svg
+  icon: https://nationalflag.io/4x3/us.svg
   include-all-proxies: true
   exclude-filter: (?i)(套餐|到期|有效|剩余|版本|已用|过期|失联|官方|网址|群|客服|网站|获取|订阅|流量|机场|下次|官址|联系|邮箱|工单|学术|官网|距离|更新|时间|直连|\b(?:TEST|USED|TOTAL|EXPIRE|EMAIL)\b)
   include-all-providers: true
